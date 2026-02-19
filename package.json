@@ -1,0 +1,39 @@
+{
+  "name": "n8n-nodes-mattermost-webhook-message",
+  "version": "0.0.1",
+  "description": "n8n community node to post messages to Mattermost using an incoming webhook",
+  "license": "MIT",
+  "homepage": "",
+  "keywords": ["n8n-community-node-package", "mattermost"],
+  "author": { "name": "Baptiste Fontaine", "email": "baptiste@bixoto.com" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bixoto/n8n-nodes-mattermost-webhook-message.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/MattermostWebhookMessage/MattermostWebhookMessage.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": { "n8n-workflow": "*" }
+}
