@@ -17,11 +17,11 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-_List the operations supported by your node._
+This node only supports posting a message in Mattermost.
 
 ## Credentials
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+There are no credentials for this node.
 
 ## Compatibility
 
@@ -29,11 +29,22 @@ _State the minimum n8n version, as well as which versions you test against. You 
 
 ## Usage
 
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
+1. In the Mattermost menu, click on "Integrations"
+2. Click on "Incoming Webhooks"
+3. Click on "Add Incoming Webhook"
+4. Give it a title and a description; fill the rest as you want
+5. Once it’s created, you get an incoming webhook URL to copy in your node
 
-_By the time users are looking for community nodes, they probably already know n8n basics. But if you expect new users, you can link to the [Try it out](https://docs.n8n.io/try-it-out/) documentation to help them get started._
+Configure your node with:
+
+- Incoming Webhook URL (mandatory): the URL you got at the previous step
+- Text (mandatory): text of the message. Can contain newlines and Markdown markup
+- Username (optional): username to display on the message. Defaults on the one you gave when you created the incoming
+  webhook in Mattermost.
+- Icon emoji (optional): icon emoji to use for the avatar on the message. For example, `robot_face`.
+
 
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-
+* [Mattermost documentation > Incoming webhooks](https://developers.mattermost.com/integrate/webhooks/incoming/)
