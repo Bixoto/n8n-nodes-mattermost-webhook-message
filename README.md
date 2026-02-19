@@ -4,12 +4,11 @@ This is an n8n community node. It lets you post messages on Mattermost using an 
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Usage](#usage)
-[Resources](#resources)
+* [Installation](#installation)
+* [Operations](#operations)
+* [Compatibility](#compatibility)
+* [Usage](#usage)
+* [Resources](#resources)
 
 ## Installation
 
@@ -19,13 +18,10 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 This node only supports posting a message in Mattermost.
 
-## Credentials
-
-There are no credentials for this node.
-
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
+The node was only tested on n8n 1.123.18. However, its implementation is very simple so it should work with almost any
+version of n8n.
 
 ## Usage
 
