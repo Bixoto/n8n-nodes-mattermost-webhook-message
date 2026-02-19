@@ -8,6 +8,7 @@ This is an n8n community node. It lets you post messages on Mattermost using an 
 * [Operations](#operations)
 * [Compatibility](#compatibility)
 * [Usage](#usage)
+* [FAQ](#faq)
 * [Resources](#resources)
 
 ## Installation
@@ -39,6 +40,15 @@ Configure your node with:
   webhook in Mattermost.
 - Icon emoji (optional): icon emoji to use for the avatar on the message. For example, `robot_face`.
 
+## FAQ
+
+### But there is already a Mattermost node!
+
+[Yes](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mattermost/), but it uses the Mattermost API.
+It requires an API key and doesn’t support the simple flow of posting to an incoming webhook URL.
+
+* If you want to use an incoming webhook URL, use this node
+* If you want to use the API, use the Mattermost node
 
 ## Resources
 
